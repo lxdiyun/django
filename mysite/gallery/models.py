@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib import admin
+from gallery.items.fields import ThumbnailImageField
 
 
 class Item(models.Model):
@@ -20,7 +21,7 @@ class Item(models.Model):
 class Photo(models.Model):
     item = models.ForeignKey(Item)
     title = models.CharField(max_length=100)
-    image = models.ImageField(upload_to='photos')
+    image = ThumbnailImageField(upload_to='photos')
     caption = models.CharField(max_length=250, blank=True)
 
     class Meta:
