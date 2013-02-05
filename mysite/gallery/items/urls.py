@@ -1,4 +1,5 @@
 from django.conf.urls.defaults import patterns, url
+from django.views.generic import DetailView, ListView
 from gallery.models import Item, Photo
 
 urlpatterns = patterns('django.views.generic',
@@ -10,31 +11,28 @@ urlpatterns = patterns('django.views.generic',
                                    'item_list': lambda: Item.objects.all()
                                }
                            },
-                           name='inedx'
+                           name='index'
                            ),
                        url(r'^items/$',
-                           'list_detail.object_list',
-                           kwargs={
-                               'queryset': Item.objects.all(),
-                               'template_name': 'items_list.html',
-                               'allow_empty': True
-                           },
+                           ListView.as_view(
+                               queryset=Item.objects.all(),
+                               context_object_name='items_list',
+                               template_name='items_list.html'
+                           ),
                            name='item_list'
                            ),
-                       url(r'^items/(?P<object_id>\d+)/$',
-                           'list_detail.object_detail',
-                           kwargs={
-                               'queryset': Item.objects.all(),
-                               'template_name': 'items_detail.html',
-                           },
+                       url(r'^items/(?P<pk>\d+)/$',
+                           DetailView.as_view(
+                               model=Item,
+                               template_name='items_detail.html',
+                           ),
                            name='item_detail'
                            ),
-                       url(r'^photos/(?P<object_id>\d+)/$',
-                           'list_detail.object_detail',
-                           kwargs={
-                               'queryset': Photo.objects.all(),
-                               'template_name': 'photos_detail.html',
-                           },
+                       url(r'^photos/(?P<pk>\d+)/$',
+                           DetailView.as_view(
+                               model=Photo,
+                               template_name='photos_detail.html',
+                           ),
                            name='photo_detail'
                            ),
                        )

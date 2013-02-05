@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib import admin
+from django.core.urlresolvers import reverse
 from gallery.items.fields import ThumbnailImageField
 
 
@@ -13,9 +14,8 @@ class Item(models.Model):
     def __unicode__(self):
         return self.name
 
-    @models.permalink
     def get_absolute_url(self):
-        return ('item_detail', None, {'object_id': self.id})
+        return reverse('item_detail', args=(self.id,))
 
 
 class Photo(models.Model):
@@ -30,9 +30,8 @@ class Photo(models.Model):
     def __unicode__(self):
         return self.title
 
-    @models.permalink
     def get_absolute_url(self):
-        return ('photo_detail', None, {'object_id': self.id})
+        return reverse('photo_detail', args=(self.id,))
 
 
 class PhotoInLine(admin.StackedInline):
