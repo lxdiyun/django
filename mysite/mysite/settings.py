@@ -84,7 +84,7 @@ SECRET_KEY = 'v4=28)@3oyg3r6_96sfr38-1nlvpdb56x1jwi)j%zfn!s42d*5'
 TEMPLATE_LOADERS = (
     'django.template.loaders.filesystem.Loader',
     'django.template.loaders.app_directories.Loader',
-#     'django.template.loaders.eggs.Loader',
+    # 'django.template.loaders.eggs.Loader',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -103,9 +103,11 @@ ROOT_URLCONF = 'mysite.urls'
 WSGI_APPLICATION = 'mysite.wsgi.application'
 
 TEMPLATE_DIRS = (
-    # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
+    # Put strings here, like "/home/html/django_templates"
+    # or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
+    "/home/www/mysite/mytemplates/"
 )
 
 INSTALLED_APPS = (
@@ -120,6 +122,8 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable admin documentation:
     'django.contrib.admindocs',
     'gallery',
+    'polls',
+    'blog',
 )
 
 # A sample logging configuration. The only tangible logging
