@@ -133,6 +133,7 @@ INSTALLED_APPS = (
     'blog',
     'cms',
     'liveupdate',
+    'pastebin',
 
     'django.contrib.flatpages',
 )

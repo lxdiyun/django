@@ -22,6 +22,7 @@ urlpatterns = patterns('',
                        url(r'^blog/', include('blog.urls')),
                        url(r'^cms/', include('cms.urls')),
                        url(r'^liveupdate/', include('liveupdate.urls')),
+                       url(r'^paste/', include('pastebin.urls')),
 
                        url(r'^pages/',
                            include('django.contrib.flatpages.urls')),
