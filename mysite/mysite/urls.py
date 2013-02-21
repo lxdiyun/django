@@ -15,6 +15,7 @@ urlpatterns = patterns('',
                            include('django.contrib.admindocs.urls')),
 
                        # Uncomment the next line to enable the admin:
+                       url(r'^grappelli/', include('grappelli.urls')),
                        url(r'^admin/', include(admin.site.urls)),
 
                        url(r'^gallery/', include('gallery.real_urls')),
