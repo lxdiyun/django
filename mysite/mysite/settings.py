@@ -135,6 +135,7 @@ INSTALLED_APPS = (
     'cms',
     'liveupdate',
     'pastebin',
+    'zenshu',
 
     'django.contrib.flatpages',
 )

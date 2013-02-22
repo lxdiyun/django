@@ -24,6 +24,7 @@ urlpatterns = patterns('',
                        url(r'^cms/', include('cms.urls')),
                        url(r'^liveupdate/', include('liveupdate.urls')),
                        url(r'^paste/', include('pastebin.urls')),
+                       url(r'^zenshu/', include('zenshu.urls')),
 
                        url(r'^pages/',
                            include('django.contrib.flatpages.urls')),

@@ -1,0 +1,3 @@
+[submodule "mysite/zenshu"]
+	path = mysite/zenshu
+	url = git@github.com:lxdiyun/zenshu.git
