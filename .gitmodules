@@ -1,6 +1,6 @@
 [submodule "mysite/zenshu"]
 	path = mysite/zenshu
-	url = git@github.com:lxdiyun/zenshu.git
+	url = https://github.com/lxdiyun/zenshu.git
 [submodule "mysite/django-daterange-filter"]
 	path = mysite/django-daterange-filter
 	url = https://github.com/DXist/django-daterange-filter.git
