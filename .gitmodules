@@ -4,3 +4,6 @@
 [submodule "mysite/django-daterange-filter"]
 	path = mysite/django-daterange-filter
 	url = https://github.com/DXist/django-daterange-filter.git
+[submodule "mysite/django-bootstrap-pagination"]
+	path = mysite/django-bootstrap-pagination
+	url = https://github.com/jmcclell/django-bootstrap-pagination.git
