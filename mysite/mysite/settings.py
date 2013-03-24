@@ -140,6 +140,7 @@ INSTALLED_APPS = (
     #    'liveupdate',
     #    'pastebin',
     'zenshu',
+    'itlog',
 
     'django.contrib.flatpages',
     'django_extensions'
