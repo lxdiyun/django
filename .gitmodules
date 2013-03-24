@@ -7,3 +7,6 @@
 [submodule "mysite/django-bootstrap-pagination"]
 	path = mysite/django-bootstrap-pagination
 	url = https://github.com/jmcclell/django-bootstrap-pagination.git
+[submodule "mysite/itlog"]
+	path = mysite/itlog
+	url = https://github.com/lxdiyun/itlog.git
