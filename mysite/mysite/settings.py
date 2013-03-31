@@ -1,8 +1,8 @@
 # Django settings for mysite project.
 
-DEBUG = False
+DEBUG = True
 TEMPLATE_DEBUG = DEBUG
-ALLOWED_HOSTS=['192.168.64.128']
+ALLOWED_HOSTS = ['192.168.64.128']
 
 ADMINS = (
     # ('Your Name', 'your_email@example.com'),

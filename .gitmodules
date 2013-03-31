@@ -10,3 +10,6 @@
 [submodule "mysite/itlog"]
 	path = mysite/itlog
 	url = https://github.com/lxdiyun/itlog.git
+[submodule "mysite/adli"]
+	path = mysite/adli
+	url = https://github.com/lxdiyun/django_util.git
