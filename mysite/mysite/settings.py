@@ -142,6 +142,7 @@ INSTALLED_APPS = (
     #    'pastebin',
     'zenshu',
     'itlog',
+    'adli',
 
     'django.contrib.flatpages',
     'django_extensions'
