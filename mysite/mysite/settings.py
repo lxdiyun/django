@@ -1,6 +1,6 @@
 # Django settings for mysite project.
 
-DEBUG = True
+DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 ALLOWED_HOSTS = ['192.168.64.128']
 
